@@ -7,7 +7,7 @@ INSERT INTO materia (id, nombre) VALUES
 
 INSERT INTO alumno (id, nombre, apellido, id_materia) VALUES
     (1, 'Francisco', 'Alarcón', 1);
-    (1, 'Raul', 'Gonzales', 1);
-    (1, 'Serigo', 'Castro', 1);
-    (1, 'Alvaro', 'Hernández', 1);
-    (1, 'Kevin', 'Medina', 1);
+    (1, 'Raul', 'Gonzales', 2);
+    (1, 'Serigo', 'Castro', 3);
+    (1, 'Alvaro', 'Hernández', 4);
+    (1, 'Kevin', 'Medina', 5);
