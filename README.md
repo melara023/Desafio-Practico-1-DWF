@@ -1,6 +1,6 @@
 En este pequeño proyecto se encuentra desarrollado en desafio 1 
 
-El codigo fuente se encuentra en la breach Main
+El codigo fuente se encuentra en la breach Master
 
 Alumno: Miguel ALberto Hernández Melara | HM232718
 
