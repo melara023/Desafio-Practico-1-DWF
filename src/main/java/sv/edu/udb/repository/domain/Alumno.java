@@ -1,17 +1,23 @@
 package sv.edu.udb.repository.domain;
+
 import jakarta.persistence.*;
+import lombok.*;
 
 @Entity
 @Table(name = "alumno")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Alumno {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;
     private String apellido;
-    public Alumno(){}
+
     @ManyToOne
-    @JoinColumn(name = "id_materia", nullable = false)
+    @JoinColumn(name = "id_materia")
     private Materia materia;
     public Alumno(String nombre, String apellido, Materia materia){
         this.nombre = nombre;

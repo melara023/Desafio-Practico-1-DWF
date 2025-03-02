@@ -1,21 +1,23 @@
 package sv.edu.udb.repository.domain;
+
 import jakarta.persistence.*;
+import lombok.*;
 import java.util.List;
 
 @Entity
 @Table(name = "materia")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Materia {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;
-    @OneToMany(mappedBy = "materia")
-    private List<Alumno> alumnos;
-    public Materia(){}
-    public Materia(String nombre){
+    public Materia(String nombre) {
         this.nombre = nombre;
     }
-
     public Long getId() {
         return id;
     }
@@ -30,13 +32,5 @@ public class Materia {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public List<Alumno> getAlumnos() {
-        return alumnos;
-    }
-
-    public void setAlumnos(List<Alumno> alumnos) {
-        this.alumnos = alumnos;
     }
 }

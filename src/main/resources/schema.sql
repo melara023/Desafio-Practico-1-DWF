@@ -7,7 +7,7 @@
 -- ----------------------------------------------------------------
 CREATE TABLE materia (
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(100) NOT NULL
+    nombre VARCHAR(100) NOT NULL UNIQUE
 );
 
 -- ----------------------------------------------------------------
